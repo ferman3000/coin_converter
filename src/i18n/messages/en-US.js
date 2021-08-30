@@ -3,7 +3,8 @@ import { LOCALES } from '../locales';
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
     [LOCALES.ENGLISH]: {
-        'hola': 'Hello'
+        'hola': 'Hello',
+        'hola estoy en main':'Hi Im main'
     }
 
 }
