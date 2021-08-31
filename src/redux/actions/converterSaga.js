@@ -26,7 +26,7 @@ const getCurrencies = async() =>{
     //AQUI OBTENGO EL VALOR DEL SERVICIO
     const url =  'https://api.coingecko.com/api/v3/coins/list?include_platform=<boolean>';
     const result = await axios.get(url);
-    console.log(result.data);
+    //console.log(result.data);
     currencies = result.data;
     return currencies;
 }

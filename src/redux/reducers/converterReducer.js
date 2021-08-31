@@ -3,11 +3,14 @@ import {GET_CURRENCIES, GET_CURRENCIES_SUCCESS, GET_CURRENCIES_ERROR} from '../A
 //Ahora inicializo los estados
 const init = {
     currencies:[],
-    currency:{},
     loading:false,
     error:false,  
-    coinsFullNames:[],
-    coinFullName:'', 
+    selectedCurrencyFullname:{},
+    selectedCurrencySymbols:{},
+    fullNameCoin:"",
+    validateData:false,
+
+
 }
 
 const Reducer = (state = init, action) => {

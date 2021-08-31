@@ -7,31 +7,26 @@ import ReduxWrap from './redux/ReduxWrap';
 
 
 import Cards from './components/Cards'
-import Card from './components/Card'
+
 
 function App() {
    const [locale, setLocale] = useState(LOCALES.SPANISH)
   return (
     
     <I18nProvider locale= {locale}>  
-      <div className="App">
 
-        <Cards/>
-
-      </div>
       <div className="App">
           {translate("hola")}   
           <ReduxWrap>
-            <Main
+            <Cards
               translate={
                 translate
               }
             /> 
-
-          </ReduxWrap>   
-      </div>
+          </ReduxWrap>     
       <button onClick={() => setLocale(LOCALES.SPANISH)}>Español</button>
       <button onClick={() => setLocale(LOCALES.ENGLISH)}>English</button>
+      </div>
     </I18nProvider>
   );
 }
