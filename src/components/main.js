@@ -15,9 +15,7 @@ const main = ({getCurrency, translate, coinState} ) => {
             {translate("hola estoy en main")}
            
             {coinState.currencies.map((currency)=>{
-                <text>
-                    {currency}
-                </text>
+                //console.log(currency.name)
             })}
 
 
